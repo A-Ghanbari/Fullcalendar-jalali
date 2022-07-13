@@ -1,0 +1,84 @@
+.fc-toolbar-title{
+    font-size: 1.3em !important;
+    text-align: center !important;
+}
+.fc-today-button {
+    display: none !important;
+}
+.fc-button-group{
+    button{
+        background-color: #a1a3a8 !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 3px !important;
+    }
+}
+.fc-theme-standard td, .fc-theme-standard th {
+    a{
+        color: #a1a3a8 !important;
+    }
+    border: none !important;
+    border-bottom: 1px solid #eee !important;
+}
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #f9f9f9 !important;
+    a{
+        color: rgb(249, 57, 57) !important;
+    }
+}
+.fc-theme-standard .fc-scrollgrid {
+    border: none !important;
+}
+.fc ,.fc-media-screen ,.fc-direction-rtl ,.fc-theme-standard{
+    height: 100% !important;
+    min-height: 400px !important;
+}
+
+.claendar-toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h1{
+        text-align: center;
+        color: #000;
+        margin: 0;
+    }
+    padding: 8px;
+    .toolbar-today , .toolbar-arrow-left , .toolbar-arrow-right{
+        color: #000;
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        height: 32px;
+        text-align: center;
+        cursor: pointer;           
+        svg{
+            vertical-align: middle;
+            vertical-align: -webkit-baseline-middle !important;
+        }
+        &:hover{
+            background-color: #e7e7e7;
+        }
+    }
+    .left-toolbar{
+        max-width: 85px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        .toolbar-today{
+            padding: 4px;
+            max-width: 50px;
+        }
+        .toolbar-arrow-left{
+            padding: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            max-width: 30px;
+        }
+    }
+    .toolbar-arrow-right{
+        padding: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        max-width: 30px;
+    }
+}
